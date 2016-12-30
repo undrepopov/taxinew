@@ -1,25 +1,255 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rng-iA-wm6">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="cub-zP-lLI">
+            <objects>
+                <viewController id="Rng-iA-wm6" customClass="MMUIViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u0F-Kf-qnC"/>
+                        <viewControllerLayoutGuide type="bottom" id="HS3-zT-bH3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NBP-Cw-7QC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0Q-Kx-uf3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chicago Taxi Simulator Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVv-Ly-Oub">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="35"/>
+                                        <color key="backgroundColor" red="0.023529414089999999" green="0.011764707040000001" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter your driver name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o11-eX-vjy">
+                                        <rect key="frame" x="31" y="239" width="259" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCu-5i-423">
+                                        <rect key="frame" x="0.0" y="427" width="320" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startButton:" destination="Rng-iA-wm6" eventType="touchUpInside" id="x1B-lj-RO5"/>
+                                            <segue destination="vXZ-lx-hvc" kind="showDetail" identifier="push to game" id="D2y-XW-Man"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your taxicab number is:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxm-1G-Ps9">
+                                        <rect key="frame" x="84" y="287" width="152" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbD-tl-ZfI">
+                                        <rect key="frame" x="118" y="324" width="84" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yK-n4-wzT">
+                                        <rect key="frame" x="74" y="372" width="173" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="I dont like this number!">
+                                            <color key="titleColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="rerollCabNumberButton:" destination="Rng-iA-wm6" eventType="touchUpInside" id="gnl-Oo-jD2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z39-E7-toQ">
+                                        <rect key="frame" x="31" y="79" width="226" height="133"/>
+                                        <string key="text">Welcome to Chicago Taxi Simulator, a game where you operate a taxicab in Chicago and try to make the most money in the time alloted. Good luck driver.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pEt-p9-sdB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="driverNameTextField" destination="o11-eX-vjy" id="v80-WJ-DWE"/>
+                        <outlet property="taxiCabNumberLabel" destination="zbD-tl-ZfI" id="wgm-VT-MH6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxy-iL-3tQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152" y="102"/>
+        </scene>
+        <!--Game View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="GameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="m0A-wh-wdk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rmJ-f8-nsD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cab:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLe-tg-4Mf">
+                                        <rect key="frame" x="8" y="32" width="98" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fares:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwp-MJ-dqc">
+                                        <rect key="frame" x="171" y="17" width="107" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money: $" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBD-Z7-25U">
+                                        <rect key="frame" x="171" y="32" width="101" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgP-bH-Mmc">
+                                        <rect key="frame" x="8" y="46" width="129" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cab Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="grx-Yx-I9d">
+                                        <rect key="frame" x="44" y="32" width="98" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fares Fulfilled" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-x1-LPf">
+                                        <rect key="frame" x="220" y="17" width="107" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grB-1A-QkG">
+                                        <rect key="frame" x="111" y="46" width="129" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Driver:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZA-S0-Y0t">
+                                        <rect key="frame" x="8" y="17" width="50" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Driver Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSh-VT-CFJ">
+                                        <rect key="frame" x="49" y="17" width="119" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money Made" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOi-GC-MTy">
+                                        <rect key="frame" x="226" y="32" width="101" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turns left:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgM-wK-ned">
+                                        <rect key="frame" x="209" y="46" width="129" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turns" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7E-vG-m7c">
+                                        <rect key="frame" x="261" y="46" width="129" height="21"/>
+                                        <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RBT-LA-rjq">
+                                <rect key="frame" x="0.0" y="361" width="320" height="107"/>
+                                <color key="backgroundColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UlR-6x-3wB">
+                                <rect key="frame" x="0.0" y="190" width="320" height="171"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chicago-neighborhoods-map_03-500x312.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kWT-GS-Wya">
+                                        <rect key="frame" x="0.0" y="20" width="320" height="131"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="taxi-map-pin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ck5-ok-y8X">
+                                        <rect key="frame" x="37" y="73" width="56" height="49"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIp-g4-qaL">
+                                <rect key="frame" x="0.0" y="451" width="320" height="30"/>
+                                <color key="backgroundColor" red="0.015686275437474251" green="0.011764707043766975" blue="0.0039215688593685627" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="AlNile-Bold" family="Al Nile" pointSize="15"/>
+                                <state key="normal" title="Action">
+                                    <color key="titleColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hFA-ly-XnX"/>
+                                </connections>
+                            </button>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KNe-Zg-yk8">
+                                <rect key="frame" x="0.0" y="73" width="320" height="117"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SpZ-ns-iWP">
+                                        <rect key="frame" x="14" y="1" width="293" height="109"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.90588241820000004" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="71p-Xo-k7e"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="actionButton" destination="NIp-g4-qaL" id="qge-Ml-Plr"/>
+                        <outlet property="cabNumberLabel" destination="grx-Yx-I9d" id="eGz-hJ-EDj"/>
+                        <outlet property="currentLocationLabel" destination="grB-1A-QkG" id="LJG-a6-Gdb"/>
+                        <outlet property="driverNameLabel" destination="LSh-VT-CFJ" id="RaP-y4-hqe"/>
+                        <outlet property="faresFulfilledLabel" destination="IVC-x1-LPf" id="h7B-99-hx0"/>
+                        <outlet property="moneyMadeLabel" destination="yOi-GC-MTy" id="Xjr-sD-kb6"/>
+                        <outlet property="pinLocationLabel" destination="Ck5-ok-y8X" id="Zt3-yU-wLi"/>
+                        <outlet property="storyLabel" destination="SpZ-ns-iWP" id="K6h-x8-m3T"/>
+                        <outlet property="timeRemaining" destination="f7E-vG-m7c" id="A5Z-XA-uYi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="238" y="102"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chicago-neighborhoods-map_03-500x312.jpg" width="500" height="312"/>
+        <image name="taxi-map-pin.png" width="64" height="93"/>
+    </resources>
 </document>

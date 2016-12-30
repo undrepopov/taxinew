@@ -1,15 +1,18 @@
 //
-//  ViewController.h
+//  Factory.h
 //  TaxiNew
 //
 //  Created by User on 11/12/14.
 //  Copyright (c) 2014 ANDREY. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
+@interface Factory : NSObject
+
+-(NSArray *)tiles;
+
+
 
 
 @end
-
